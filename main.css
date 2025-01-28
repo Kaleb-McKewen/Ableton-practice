@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+    --theme-orange: #ff764d;
+    --theme-dark-blue: #0000ff;
+}
+
+.dark-blue {
+    color: var(--theme-dark-blue);
+}
+
+.orange {
+    color: var(--theme-orange);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+  border-bottom: solid 2px lightgray;
+}
+
+.main-nav-logo {
+  width: 3.75em;
+  height: 1.75em;
+}
+
+.bx-plus{
+    align-self: center;
+}
+
+.nav-headings {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.large-nav-link{
+    font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Outfit", serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-headings {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768) {
+}
