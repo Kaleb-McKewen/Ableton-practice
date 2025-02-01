@@ -8,18 +8,17 @@ menu_toggle.addEventListener("click", showMenu);
 
 
 function showMenu(){
-    if (mobile_menu.style.display=="block"){
-        mobile_menu.style.display="none";
+    if (mobile_menu.classList=="menu-visible"){
+        mobile_menu.classList.remove('menu-visible');
+        mobile_menu.classList.add('menu-invisible');
         main_menu.classList.remove('mobile-styling')
         menu_icon.classList.add('bx-caret-down')
-        menu_icon.classList.remove('bx-caret-up')
-        main_menu.classList.remove('white')
-        console.log('here')    
-    } else{ 
-        mobile_menu.style.display="block";
+        menu_icon.classList.remove('bx-caret-up') 
+    } else{
+        mobile_menu.classList.add('menu-visible');
+        mobile_menu.classList.remove('menu-invisible'); 
         main_menu.classList.add('mobile-styling')
         menu_icon.classList.remove('bx-caret-down')
         menu_icon.classList.add('bx-caret-up')
-        main_menu.classList.add('white')
     }       
 }
