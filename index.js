@@ -1,6 +1,6 @@
 const menu_toggle = document.getElementById('menu-toggle');
 const mobile_menu = document.getElementById('mobile-menu');
-const main_menu = document.querySelector('.nav-container')
+const main_menu = document.querySelector('.main-nav')
 const menu_icon = document.querySelector('.menu-icon')
 
 

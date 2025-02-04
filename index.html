@@ -8,8 +8,8 @@
     <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
+    <div id="main">
+      <nav class="main-nav">
         <ul class="nav-headings">
           <svg
             role="img"
@@ -34,7 +34,7 @@
           <li class="nav-item"><a href="#">Packs</a></li>
           <li class="nav-item"><a href="#">Help</a></li>
           <li class="nav-item">
-            <button class="more-menu-toggle menu-button">More<i class="bx bx-plus"></i></button>
+            <button class="active menu-button">More<i class="bx bx-plus"></i></button>
           </li>
         </ul>
 
@@ -44,66 +44,90 @@
           </li>
           <li class="nav-item"><a href="#">Log in or register</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="mobile-menu" class="menu-visible">
-      <div class="mobile-menu-container">
-        <ul class="mobile-menu-list">
-          <li class="mobile-nav-item"><a href="#">Live</a></li>
-          <li class="mobile-nav-item"><a href="#">Push</a></li>
-          <li class="mobile-nav-item"><a href="#">Move</a></li>
-          <li class="mobile-nav-item"><a href="#">Note</a></li>
-          <li class="mobile-nav-item"><a href="#">Link</a></li>
-          <li class="mobile-nav-item"><a href="#">Shop</a></li>
-          <li class="mobile-nav-item"><a href="#">Packs</a></li>
-          <li class="mobile-nav-item"><a href="#">Help</a></li>
-          <li class="mobile-nav-item"><a href="#">Try Live 12 for free</a></li>
-          <li class="mobile-nav-item"><a href="#">Log in or register</a></li>
-        </ul>
-
-        <section>
-          <h3 class="mobile-nav-heading">More on Ableton.com</h3>
+      </nav>
+      <nav id="mobile-menu" class="menu-invisible">
+        <div class="mobile-menu-container">
           <ul class="mobile-menu-list">
-            <li class="mobile-nav-item small-link"><a href="#">Blog</a></li>
-            <li class="mobile-nav-item small-link"><a href="#">Ableton for the Classroom</a></li>
-            <li class="mobile-nav-item small-link"><a href="#">Ableton for Collages and Universities</a></li>
-            <li class="mobile-nav-item small-link"><a href="#">Certified Training</a></li>
-            <li class="mobile-nav-item small-link"><a href="#">About Ableton</a></li>
-            <li class="mobile-nav-item small-link"><a href="#">Jobs</a></li>
-            <li class="mobile-nav-item small-link"><a href="#">Apprenticeships</a></li>
+            <li class="mobile-nav-item"><a href="#">Live</a></li>
+            <li class="mobile-nav-item"><a href="#">Push</a></li>
+            <li class="mobile-nav-item"><a href="#">Move</a></li>
+            <li class="mobile-nav-item"><a href="#">Note</a></li>
+            <li class="mobile-nav-item"><a href="#">Link</a></li>
+            <li class="mobile-nav-item"><a href="#">Shop</a></li>
+            <li class="mobile-nav-item"><a href="#">Packs</a></li>
+            <li class="mobile-nav-item"><a href="#">Help</a></li>
+            <li class="mobile-nav-item"><a href="#">Try Live 12 for free</a></li>
+            <li class="mobile-nav-item"><a href="#">Log in or register</a></li>
           </ul>
-        </section>
-        <section>
-          <h3 class="mobile-nav-heading">More from Ableton:</h3>
-          <ul class="mobile-menu-list width-list">
-            <li class="mobile-nav-item small-link scrollable">
-              <a href="#"
-                ><h3>Loop</h3>
-                <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p></a
-              >
-            </li>
-            <li class="mobile-nav-item small-link scrollable">
-              <a href="#"
-                ><h3>Learning Music</h3>
-                <p>Learn the fundamentals of music making right in your browser.</p></a
-              >
-            </li>
-            <li class="mobile-nav-item small-link scrollable">
-              <a href="#"
-                ><h3>Learning Synths</h3>
-                <p>Get started with synthesis using a web-based synth and accompanying lessons.</p></a
-              >
-            </li>
-            <li class="mobile-nav-item small-link scrollable">
-              <a href="#"
-                ><h3>Making Music</h3>
-                <p>Some tips from 74 Creative Strategies for Electronic Producers.</p></a
-              >
-            </li>
-          </ul>
-        </section>
-      </div>
-    </nav>
+
+          <section>
+            <h3 class="mobile-nav-heading">More on Ableton.com</h3>
+            <ul class="mobile-menu-list">
+              <li class="mobile-nav-item small-link"><a href="#">Blog</a></li>
+              <li class="mobile-nav-item small-link"><a href="#">Ableton for the Classroom</a></li>
+              <li class="mobile-nav-item small-link"><a href="#">Ableton for Collages and Universities</a></li>
+              <li class="mobile-nav-item small-link"><a href="#">Certified Training</a></li>
+              <li class="mobile-nav-item small-link"><a href="#">About Ableton</a></li>
+              <li class="mobile-nav-item small-link"><a href="#">Jobs</a></li>
+              <li class="mobile-nav-item small-link"><a href="#">Apprenticeships</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="mobile-nav-heading">More from Ableton:</h3>
+            <ul class="mobile-menu-list width-list">
+              <li class="mobile-nav-item small-link scrollable">
+                <a href="#"
+                  ><h3>Loop</h3>
+                  <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p></a
+                >
+              </li>
+              <li class="mobile-nav-item small-link scrollable">
+                <a href="#"
+                  ><h3>Learning Music</h3>
+                  <p>Learn the fundamentals of music making right in your browser.</p></a
+                >
+              </li>
+              <li class="mobile-nav-item small-link scrollable">
+                <a href="#"
+                  ><h3>Learning Synths</h3>
+                  <p>Get started with synthesis using a web-based synth and accompanying lessons.</p></a
+                >
+              </li>
+              <li class="mobile-nav-item small-link scrollable">
+                <a href="#"
+                  ><h3>Making Music</h3>
+                  <p>Some tips from 74 Creative Strategies for Electronic Producers.</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+      </nav>
+      <nav class="secondary-nav">
+        <ul class="nav-headings">
+          <li class="active"><a>About</a></li>
+          <li><a>Jobs</a></li>
+          <li><a>Apprenticeships</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <div class="hero">
+          <h1>Ableton</h1>
+        </div>
+      </header>
+      <section>
+        <div class="about-section body-text">
+          <h2>
+            We make <a href="#">Live</a>, <a href="#">Push</a>, <a href="#">Note</a>, <a href="#">Move</a> and <a href="#">Link</a> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.
+          </h2>
+          <p>
+            Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community of dedicated musicians,
+            sound designers, and artists from across the world.
+          </p>
+        </div>
+      </section>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
