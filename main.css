@@ -6,6 +6,7 @@
   --theme-red: #fd5948;
   --theme-yellow: #fbffa7;
   --theme-green: #b6ffc0;
+  --theme-purple: #d5b3ff;
 }
 
 * {
@@ -103,7 +104,17 @@ button {
   font-size: 1.25rem;
 }
 
-.secondary-nav a {
+.secondary-nav{
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.secondary-nav a,
+ul {
   font-size: 0.9rem;
 }
 
@@ -209,11 +220,29 @@ a {
   color: #0000ff;
 }
 
+.about-section-collage-4 {
+  height: 58.33vw;
+  width: 100%;
+  position: relative;
+  margin-bottom: 8.33vw; 
+}
+
+.about-section-collage-3{
+  display: flex;
+   justify-content: center;
+   max-width: 75vw;
+   margin: auto;
+}
+
+.about-section-collage-3 img{
+  width: 100%;
+}
+
 .about-section-collage-2 {
   height: 75vw;
   width: 100%;
   position: relative;
-  /* margin-bottom: 8.33vw; */
+  margin-bottom: 8.33vw; 
 }
 
 .about-section-collage {
@@ -221,6 +250,14 @@ a {
   width: 100%;
   position: relative;
   margin-bottom: 8.33vw;
+}
+
+.about-page-purple-bg {
+  background-color: var(--theme-purple);
+  height: 58.33vw;
+  width: 66.66vw;
+  left: 16.66vw;
+  position: absolute;
 }
 
 .about-page-yellow-bg {
@@ -239,6 +276,28 @@ a {
   position: absolute;
 }
 
+.about-page-collage-3-left {
+  position: absolute;
+  background-image: url("https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=279&ixjsv=1.1.3&w=372");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+  width: 33.33vw;
+  left: 8.33vw;
+  margin-top: 16vw;
+}
+
+.about-page-collage-3-right {
+  position: absolute;
+  background-image: url("https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop&h=485&ixjsv=1.1.3&w=485");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 41.66vw;
+  width: 41.66vw;
+  left: 57vw;
+  margin-top: 9vw;
+}
+
 .about-page-collage-left {
   position: absolute;
   background-image: url("https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop&h=553&ixjsv=1.1.3&w=553");
@@ -250,7 +309,7 @@ a {
   margin-top: 4vw;
 }
 
-.about-page-collage-left-2 {
+.about-page-collage-2-left {
   position: absolute;
   background-image: url("https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2&fit=crop&h=242&ixjsv=1.1.3&q=50&w=323");
   background-repeat: no-repeat;
@@ -261,7 +320,7 @@ a {
   margin-top: 6vw;
 }
 
-.about-page-collage-left-3 {
+.about-page-collage-2-left-2 {
   position: absolute;
   background-image: url("https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop&h=242&ixjsv=1.1.3&w=323");
   background-repeat: no-repeat;
@@ -283,7 +342,7 @@ a {
   margin-top: 9vw;
 }
 
-.about-page-collage-right-2 {
+.about-page-collage-2-right {
   position: absolute;
   background-image: url("https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2&fit=crop&h=404&ixjsv=1.1.3&q=50&w=404");
   background-repeat: no-repeat;
@@ -403,6 +462,12 @@ a {
     width: 900px;
     height: 1200px;
   }
+
+  .about-page-purple-bg {
+    right: 266.66px;
+    width: 1000px;
+    height: 933px;
+  }
   .about-page-collage-left {
     height: 673px;
     width: 673px;
@@ -410,14 +475,14 @@ a {
     margin-top: 66.76px;
   }
 
-  .about-page-collage-left-2 {
+  .about-page-collage-2-left {
     height: 400px;
     width: 400px;
     left: 133px;
     margin-top: 140px;
   }
 
-  .about-page-collage-left-3 {
+  .about-page-collage-2-left-2 {
     height: 400px;
     width: 400px;
     left: 133px;
@@ -431,14 +496,32 @@ a {
     margin-top: 150px;
   }
 
-  .about-page-collage-right-2 {
+  .about-page-collage-2-right {
     height: 666.66px;
     width: 666.66px;
     left: 760px;
     margin-top: 300px;
   }
 
+  .about-page-collage-3-left {
+    height: 400px;
+    width: 533.33px;
+    left: 133.33px;
+    margin-top: 275px;
+  }
+  
+  .about-page-collage-3-right {
+    height: 666.66px;
+    width: 666.66px;
+    left: 935px;
+    margin-top: 140px;
+  }
+
   .about-section {
     width: 800px;
+  }
+
+  .about-section-collage-3{
+    max-width: 1250px;
   }
 }
