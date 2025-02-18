@@ -7,6 +7,7 @@
   --theme-yellow: #fbffa7;
   --theme-green: #b6ffc0;
   --theme-purple: #d5b3ff;
+  --theme-blue: #b1c5ff;
 }
 
 * {
@@ -210,6 +211,12 @@ a {
   font-weight: 500;
 }
 
+.body-text .bx-chevron-right {
+  font-size: 1.2rem;
+  position: absolute;
+  margin-top: 6px;
+}
+
 .body-text p {
   font-size: 1.25rem;
   font-weight: 300;
@@ -218,6 +225,12 @@ a {
 
 .body-text a {
   color: #0000ff;
+}
+
+.about-section-collage-5 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .about-section-collage-4 {
@@ -252,6 +265,17 @@ a {
   margin-bottom: 8.33vw;
 }
 
+.about-page-blue-bg {
+  background-color: var(--theme-blue);
+  width: 41.667vw;
+  height: 41.667vw;
+  margin-right: 8.33vw;
+}
+
+.about-page-blue-bg div{
+  padding:8.33vw;
+}
+
 .about-page-purple-bg {
   background-color: var(--theme-purple);
   height: 58.33vw;
@@ -274,6 +298,15 @@ a {
   width: 58.33vw;
   right: 42vw;
   position: absolute;
+}
+
+.about-page-collage-5-left {
+  background-image: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&fit=crop&h=540&ixjsv=1.1.3&w=540");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 41.667vw;
+  width: 41.667vw;
+  margin-left: 8.33vw
 }
 
 .about-page-collage-3-left {
